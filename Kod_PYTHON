@@ -1,0 +1,34 @@
+#wybór pola do obliczenia
+
+def pole_k (a):
+    return a*a
+def pole_p (a,b):
+    return a*b
+def pole_t (a,b):
+    return 0.5*a*b
+
+while (True):
+    print('\n')
+    print('Wybierz 1 jeśli chcesz obliczyć pole kwadratu')
+    print('Wybierz 2 jeśli chcesz obliczyć pole prostokąta')
+    print('Wybierz 3 jeśli chcesz obliczyć pole trójkąta')
+    print('Wybierz 4 jeśli chcesz zakończyć')
+    print()
+    Wybor = int(input('Wybieram liczbę: '))
+    print()
+    if (Wybor == 1):
+        a = int(input('Podaj długość boku kwadratu: '))
+        if (a != 0):
+            print('Pole kwadratu o długości boku',a, 'wynosi: ',pole_k(a))
+    if (Wybor == 2):
+        a = int(input('Podaj długość boku a: '))
+        b = int(input('Podaj długość boku b: '))
+        if ((a != 0)and (b !=0)):
+            print('Pole prostokąta o długości boku a: ',a,'i długości boku b: ',b, 'wynosi: ',pole_p(a,b))
+    if (Wybor == 3):
+        a = int(input('Podaj długość boku a: '))
+        b = int(input('Podaj długość boku b: '))
+        if ((a != 0)and (b !=0)):
+            print('Pole trójkąta o długości boku a: ',a,'i długości boku b: ',b, 'wynosi: ',pole_t(a,b))
+    if (Wybor == 4):
+        break
